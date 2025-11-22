@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button id="btn">new word</button>
+    <script>
+        const word = ["Focus", "Courage", "Persistence", "Creativity"];
+         function words(){
+            const wordnum = Math.floor(Math.random()*word.length);
+            const actualword = word[wordnum];
+            document.getElementById("demo").innerHTML= actualword;
+         }
+         words();
+         document.getElementById("btn").addEventListener("click",words);
+
+    </script>
+</body>
+</html>

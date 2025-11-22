@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const quotes = [
+            "Believe in yourself!",
+        "Never give up.",
+        "You can do it!",
+        "Stay positive.",
+        "Hard work pays off."
+
+        ];
+        //so in the quotes, we need one, which means one of the index needs to be choosen using random method
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomquote = quotes[randomIndex];
+        document.getElementById("demo").innerHTML = randomquote;
+    </script>
+</body>
+</html>
