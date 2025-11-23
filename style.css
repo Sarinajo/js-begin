@@ -1,0 +1,17 @@
+/* styles.css */
+
+/* --- Default (Light Mode) Styles --- */
+body {
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text */
+    transition: background-color 0.5s, color 0.5s;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* --- Specific (Dark Mode) Styles --- */
+/* This rule is more specific because it requires the body to have the 'dark-mode' class */
+body.dark-mode {
+    background-color: #333; /* Dark background */
+    color: #f0f0f0; /* Light text */
+}
