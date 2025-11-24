@@ -1,0 +1,17 @@
+/* styles.css */
+
+/* --- Default (Hidden) State --- */
+.content {
+    max-height: 0; /* Hides the content by collapsing it vertically */
+    overflow: hidden; /* Prevents text from being visible */
+    padding: 0 18px; 
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+    background-color: #f7f7f7;
+}
+
+/* --- Specific (Active/Shown) State --- */
+/* This rule is more specific and overrides the 'max-height: 0' when present */
+.container.active .content {
+    max-height: 200px; /* Expands the content to show it */
+    padding: 10px 18px; /* Adds back the padding */
+}

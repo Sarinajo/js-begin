@@ -1,0 +1,19 @@
+/* styles.css */
+
+/* --- Default Look (Less Specific) --- */
+#color-box {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  background-color: blue;
+  color: 10px;
+ justify-content: center;
+align-items: center;
+}
+
+/* --- Specific Look (More Specific) --- */
+/* This rule applies ONLY when the box has the custom 'red' class */
+#color-box.red{ 
+    background-color: red; /* Overrides blue with red */
+    border-color: darkred;
+}
